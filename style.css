@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Geral*/
 :root {
     --cor-de-fundo: #D9D0C7;
     --cor-do-header: #5e1a31;
@@ -8,7 +9,9 @@
 }
 
 * {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
     text-align: center;
 }
 
@@ -21,7 +24,14 @@ a{
     color: var(--cor-da-fonte);
 }
 
-header div {
+img {
+    width: 25vw;
+    height: 20vw;
+    border: 1px solid black;
+}
+
+/*Menu*/
+header, footer {
     background-color: var(--cor-do-header);
     color: var(--cor-Nav-N-Header-text);
 }
@@ -32,16 +42,39 @@ nav {
     color: var(--cor-da-fonte);
 }
 
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--cor-do-header);
+    color: var(--cor-Nav-N-Header-text);
+    font-size: 20px;
+}
+
+/*Página principal*/
 article {
     display: grid;
-    grid-template-rows: 1fr 450px 1fr;
+    grid-template-rows: 1fr 236px 1fr;
     margin-top: 25px;
+    gap: 70px;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.produto {
+    padding: 20px;
+}
+
+#main2{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*Rodapé*/
 footer{
     padding: 20px;
 }
