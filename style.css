@@ -55,9 +55,12 @@ nav a:hover {
 /*Página principal*/
 article {
     display: grid;
-    grid-template-rows: 1fr 236px 1fr;
+    grid-template-rows: 1fr 25vw 1fr;
     margin-top: 25px;
-    gap: 70px;
+}
+
+aside {
+    padding: 50px;
 }
 
 main {
@@ -69,9 +72,16 @@ main {
     padding: 20px;
 }
 
+.produto:hover {
+    padding: 40px;
+    
+}
+
+
 #main2{
     grid-template-columns: 1fr 1fr;
 }
+
 
 
 /*Rodapé*/
