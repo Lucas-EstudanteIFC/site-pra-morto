@@ -28,12 +28,18 @@ img {
     width: 25vw;
     height: 20vw;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 /*Menu*/
 header, footer {
     background-color: var(--cor-do-header);
     color: var(--cor-Nav-N-Header-text);
+}
+
+header {
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -49,13 +55,12 @@ nav a {
 nav a:hover {
     background-color: var(--cor-do-header);
     color: var(--cor-Nav-N-Header-text);
-    font-size: 20px;
 }
 
 /*Página principal*/
-article {
+#pagina-principal {
     display: grid;
-    grid-template-rows: 1fr 25vw 1fr;
+    grid-template-rows: 10vh 1fr 10vh 1fr 10vh 1fr;
     margin-top: 25px;
 }
 
@@ -66,22 +71,25 @@ aside {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.descricao {
+    display: hidden;
 }
 
 .produto {
     padding: 20px;
 }
 
-.produto:hover {
-    padding: 40px;
-    
+.produto:hover, .descricao:hover {
+    display: block;
+    background-color: beige;
 }
 
-
-#main2{
+.main2{
     grid-template-columns: 1fr 1fr;
 }
-
 
 
 /*Rodapé*/
