@@ -2,8 +2,8 @@
 
 /*Geral*/
 :root {
-    --cor-de-fundo: #D9D0C7;
-    --cor-do-header: #5e1a31;
+    --cor-de-fundo: #fff;
+    --cor-do-header: #5e0031;
     --cor-da-fonte: #0D0D0D;
     --cor-Nav-N-Header-text: rgb(243, 145, 162);
 }
@@ -26,7 +26,7 @@ a{
 
 img {
     width: 25vw;
-    height: 20vw;
+    height: 23vw;
     border: 1px solid black;
     overflow: hidden;
 }
@@ -34,7 +34,7 @@ img {
 /*Menu*/
 header, footer {
     background-color: var(--cor-do-header);
-    color: var(--cor-Nav-N-Header-text);
+    color: var(--cor-de-fundo);
 }
 
 header {
@@ -44,7 +44,7 @@ header {
 
 nav {
     padding: 10px;
-    background-color: var(--cor-Nav-N-Header-text);
+    background-color: #8f8f8f8f;
     color: var(--cor-da-fonte);
 }
 
@@ -54,7 +54,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--cor-do-header);
-    color: var(--cor-Nav-N-Header-text);
+    color: var(--cor-de-fundo);
 }
 
 /*Página principal*/
@@ -84,7 +84,8 @@ main {
 
 .produto:hover, .descricao:hover {
     display: block;
-    background-color: beige;
+    background-color: #8f8f8f8f;
+    border: 1px var(--cor-do-header) solid;
 }
 
 .main2{
